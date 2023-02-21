@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+    position: fixed;
+    border: 2px solid black;
+}
+
+#p1 {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+#p2 {
+    position: absolute;
+    top: 0px;
+    left: 200px;
+}
