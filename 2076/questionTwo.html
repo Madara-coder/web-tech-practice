@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question: 2</title>
+  </head>
+
+  <body>
+    <!-- Create a HTML page containing a division with image and its description in paragraph.
+Write a javascript function to change the value of description in the paragraph during onmouseover and mouseout event on the image. -->
+
+    <h1><i>Welcome to the Question Number 2</i></h1>
+    <br /><br />
+
+    <!-- Division for iframe section -->
+    <div id="main-div">
+      <!-- Section for the image -->
+      <img id="pic" src="./test.jpg" alt="Test Image" onmouseover="change()" onmouseout="returnChange()" />
+
+      <!-- Paragraph section for the image -->
+      <p id="description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quia fugiat,
+        corrupti veniam laborum accusantium incidunt totam error nemo quasi
+        voluptatem dolor laboriosam. Eos pariatur est, sunt totam dicta nulla.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+        excepturi sunt error, odio itaque ut iste perferendis porro, quisquam
+        voluptatibus beatae iusto, eos accusantium. Nostrum voluptas et unde
+        tempora enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Voluptatum dolore non accusamus laboriosam minima ex, dignissimos natus
+        eveniet soluta corrupti! Fugit impedit quas similique, repudiandae in
+        sunt eaque quasi dolores?
+      </p>
+    </div>
+
+    <!-- javaScript section -->
+    <script>
+      //first function
+      function change() {
+        document.getElementById('description').innerHTML = "The content is changed...";
+      }
+
+      //second function
+      function returnChange() {
+        document.getElementById('description').innerHTML = "I am the lord Hacker. Bhuhahahahahah.";
+      }
+    </script>
+  </body>
+</html>
