@@ -23,23 +23,27 @@ results from stored table in a new page.[10] -->
 
         <!-- Dropdown for search type -->
         <label for="book">Choose category of the book:</label>
-        <select>
+        <select name="book">
           <option value="dictionary">Dictionary</option>
           <option value="story">Story</option>
           <option value="novel">Novel</option>
-          <option value="magazine">Magazine</option></select
-        ><br />
+          <option value="magazine">Magazine</option>
+        </select>
+        <br />
 
         <!-- Text box for search keyword -->
-        <input type="search" value="search" />
-        <label for="search">Search</label><br />
+        <label for="search">Search:</label>
+        <input type="text" value="search" name="search" /><br />
 
         <!-- Radio button for the download type true or false -->
         <label for="download">Download:</label><br />
-        <input type="radio" value="true" />
-        <label for="true">true</label>
-        <input type="radio" value="false" />
-        <label for="false">false</label>
+        <input type="radio" id="one" name="download" />
+        <label for="one" value="true">true</label><br />
+        <input type="radio" id="two" name="download" />
+        <label for="two" value="false">false</label><br /><br />
+
+        <!-- Store button to save data in the database -->
+        <input type="submit" name="sumbit" /><br /><br />
       </form>
     </div>
   </body>
