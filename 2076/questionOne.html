@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question: 1</title>
+  </head>
+
+  <body>
+    <!-- 1.Create web form for book search catalog. The form should contain a dropdown defining search type, a text box for search keyword,
+a radio button for download type true or false, now write PHP script to store data from the form into database table and also retrive the
+results from stored table in a new page.[10] -->
+
+    <div class="main-div">
+      <h1>Welcome to Book Catalog</h1>
+
+      <!-- Creating a form -->
+      <form action="./questionOne.php" method="post">
+        <!-- Title -->
+        <h2>Book Searching Section</h2>
+        <br />
+
+        <!-- Dropdown for search type -->
+        <label for="book">Choose category of the book:</label>
+        <select>
+          <option value="dictionary">Dictionary</option>
+          <option value="story">Story</option>
+          <option value="novel">Novel</option>
+          <option value="magazine">Magazine</option></select
+        ><br />
+
+        <!-- Text box for search keyword -->
+        <input type="search" value="search" />
+        <label for="search">Search</label><br />
+
+        <!-- Radio button for the download type true or false -->
+        <label for="download">Download:</label><br />
+        <input type="radio" value="true" />
+        <label for="true">true</label>
+        <input type="radio" value="false" />
+        <label for="false">false</label>
+      </form>
+    </div>
+  </body>
+</html>
