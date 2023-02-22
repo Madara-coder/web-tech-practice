@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Develop a simple Web site that takes first name, last name and address from the user and stores this information in the database.
+Use JavaScript to validate form data. -->
+    <div class="main">
+        <h1>Question Three:</h1><br>
+
+        <form action="./questionThree.php" method="post" name="myform" onsubmit="validateForm()">
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" /><br />
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" /><br />
+            <label for="address">Address:</label>
+            <input type="text" name="address" /><br />
+            <input type="submit" value="Submit" name="submit">
+        </form>
+    </div>
+
+    <!-- javaScript section -->
+    <script>
+        // function for validation
+        function validateForm() {
+            const firstName = document.forms["myform"]["firstName"].value;
+            const lastName = document.forms["myform"]["lastName"].value;
+            const address = document.forms["myform"]["address"].value;
+
+            // validate using if condition
+            if (firstName == "") {
+                alert("First Name must be filled out");
+                return false;
+            } else if (lastName == "") {
+                alert("Last Name must be filled out");
+                return false;
+            } else if (address == ""){
+                alert("Address must be filled out");
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
